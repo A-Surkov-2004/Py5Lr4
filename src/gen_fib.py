@@ -17,7 +17,7 @@ g = fib_elem_gen()
 
 while True:
     el = next(g)
-    print(el)
+
     if el > 10:
         break
 
@@ -29,7 +29,7 @@ def my_genn():
 
     while True:
 
-        print(number_of_fib_elem)
+        #print(number_of_fib_elem)
         ...  # создание элементов ряда Фибоначчи
         # TODO:
         # Сгенерировать список l, в который положить числа ряда Фиб
@@ -60,6 +60,9 @@ def fib_coroutine(g):
 if __name__ == "__main__":
     my_genn = fib_coroutine(my_genn)
     gen = my_genn()
+    print('10 fib nums')
     print(gen.send(10))
+    print('5 fib nums')
     print(gen.send(5))
+    print('7 fib nums')
     print(gen.send(7))
