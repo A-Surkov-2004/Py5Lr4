@@ -54,15 +54,3 @@ def fib_coroutine(g):
         return gen
 
     return inner
-
-
-
-if __name__ == "__main__":
-    my_genn = fib_coroutine(my_genn)
-    gen = my_genn()
-    print('10 fib nums')
-    print(gen.send(10))
-    print('5 fib nums')
-    print(gen.send(5))
-    print('7 fib nums')
-    print(gen.send(7))
